@@ -112,3 +112,39 @@
 //}
 
 
+//题7：给定一个浮点数，要求得到该浮点数的个位数
+//输入描述：一行，包括一个浮点数
+//输出描述：一行，包含一个整数，为输入浮点数对应的个位数
+//#include<stdio.h>
+//int main()
+//{
+//	double ch = 0;
+//	scanf("%lf",&ch);
+//	int n = (int)ch % 10;
+//	printf("%d\n",n);
+//	return 0;
+//}
+
+//#include<stdio.h>
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d",&n);
+//	printf("%d\n",n%10);
+//	return 0;
+//}
+
+
+//题8：一年约有3.156*10^7秒，要求输入您的年龄，显示该年龄合多少秒
+//输入描述：一行，包括一个整数age(0<age<200)
+//输出描述：一行，包括一个整数，输出年龄对应的秒数
+//#include<stdio.h>
+//int main()
+//{
+//	int age;
+//	scanf("%d",&age);
+//	long long S = (long long)(age * 3.156e7);
+//	printf("%lld\n",S);
+//	return 0;
+//}
+
