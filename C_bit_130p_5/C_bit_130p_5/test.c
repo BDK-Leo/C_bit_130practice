@@ -91,3 +91,18 @@
 //}
 
 
+//题2：大于等于140输出Genius
+//#include<stdio.h>
+//int main()
+//{
+//	int IQ;
+//	while (~scanf("%d",&IQ))
+//	{
+//		if (IQ >= 140)
+//			printf("Genius");
+//	}
+//	return 0;
+//}
+
+
+
