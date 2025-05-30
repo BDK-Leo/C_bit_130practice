@@ -105,4 +105,19 @@
 //}
 
 
-
+//题3：判断成绩是否在90~100之间，是则输出"Perfect"
+//#include<stdio.h>
+//int main()
+//{
+//	int score;
+//	while (scanf("%d",&score) != EOF)
+//	{
+//		if (score>=90 && score<=100)
+//		{
+//			printf("Perfect\n");
+//		}
+//		else
+//			printf("None\n");
+//	}
+//	return 0;
+//}
