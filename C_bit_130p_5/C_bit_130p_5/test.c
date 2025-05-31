@@ -122,3 +122,20 @@
 //	return 0;
 //}
 
+
+//题4：分数大于60，输出"Pass",否则输出"Fail"
+//#include<stdio.h>
+//int main()
+//{
+//	int score;
+//	while (~scanf("%d",&score))
+//	{
+//		if (score >= 60)
+//		{
+//			printf("Pass\n");
+//		}
+//		else
+//			printf("Fail\n");
+//	}
+//	return 0;
+//}
