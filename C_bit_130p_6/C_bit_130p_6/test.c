@@ -124,3 +124,130 @@
 //	return 0;
 //}
 
+
+//题5：获取月份天数
+//输入描述：多组输入，两个整数，表示年和月
+//输出描述：一个整数，表示具体天数
+//#include<stdio.h>
+//int main()
+//{
+//	int year, month;
+//	while (~scanf("%d %d",&year,&month))
+//	{
+//		int days[] = {31,28,31,30,31,30,31,31,30,31,30,31};
+//		int day = days[month - 1];
+//		if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+//		{
+//			if (month == 2)
+//			{
+//				day += 1;
+//			}
+//		}
+//		printf("%d\n", day);
+//	}
+//	return 0;
+//}
+
+
+//题6：简单计算器
+//#include<stdio.h>
+//int main()
+//{
+//	double n1 = 0.0;
+//	double n2 = 0.0;
+//	char op = 0;
+//	while (~scanf("%lf%c%lf",&n1,&op,&n2))
+//	{
+//		switch (op)
+//		{
+//		case '+':
+//			printf("%.4lf+%.4lf=%.4lf\n", n1, n2, n1 + n2);
+//			break;
+//		case '-':
+//			printf("%.4lf-%.4lf=%.4lf\n", n1, n2, n1 - n2);
+//			break;
+//		case '*':
+//			printf("%.4lf*%.4lf=%.4lf\n", n1, n2, n1 * n2);
+//			break;
+//		case '/':
+//			if (n2 == 0.0)
+//			{
+//				printf("Wrong!\n");
+//			}
+//			else
+//			{
+//				printf("%.4lf/%.4lf=%.4lf", n1, n2, n1 / n2);
+//			}
+//			break;
+//		default:
+//			printf("None!\n");
+//			break;
+//		}
+//	}
+//	return 0;
+//}
+
+
+//题7：线段图案
+//输入描述：多组输入，一个整数，表示线段长度
+//输出描述：输出用"*"组成的对应长度的线段
+//#include<stdio.h>
+//int main()
+//{
+//	int num;
+//	while (~scanf("%d",&num))
+//	{
+//		for (int i = 0;i < num;i++)
+//		{
+//			printf("*");
+//		}
+//		printf("\n");
+//	}
+//	return 0;
+//}
+
+
+//题8：正方形图案
+//输入描述：多组输入，一个整数，表示正方形的长度和输出行数
+//输出描述：输出用"*"组成的对应边长的正方形，间隔空格
+//#include<stdio.h>
+//int main()
+//{
+//	int num;
+//	while (~scanf("%d",&num))
+//	{
+//		int num2 = num;
+//		while (num)
+//		{
+//			for (int i = 0;i < num2;i++)
+//			{
+//				printf("* ");
+//			}
+//			printf("\n");
+//			num--;
+//		}
+//	}
+//	return 0;
+//}
+
+
+//题9：直角三角形图案
+//输入描述：多组输入，一个整数（2~20），表示边的长度，即"*"的数量，也表示输出行数
+//输出描述：输出用“*”组成的对应长度的直角三角形
+#include<stdio.h>
+int main()
+{
+	int num;
+	while (~scanf("%d",&num))
+	{
+		for (int i = 0;i < num;i++)
+		{
+			for (int j = 0;j <= i;j++)
+			{
+				printf("* ");
+			}
+			printf("\n");
+		}
+	}
+	return 0;
+}
