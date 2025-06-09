@@ -39,3 +39,49 @@
 //	printf("%.2lf", sum / 5.0);
 //	return 0;
 //}
+
+
+
+//题2：HTTP状态码
+//输入描述：多组输入，一个整数(100~600)，表示HTTP状态码
+//输出描述：针对每组状态输出对应含义
+//200 - OK
+//202 - Accepted
+//400 - Bad Request
+//403 - Forbidden
+//404 - Not Found
+//500 - Internal Server Error
+//502 - Bad Gateway
+//#include<stdio.h>
+//int main()
+//{
+//	int n = 0;
+//	while (~scanf("%d",&n))
+//	{
+//		switch (n)
+//		{
+//		case 200:
+//			printf("OK\n");
+//			break;
+//		case 202:
+//			printf("Accepted\n");
+//			break;
+//		case 400:
+//			printf("Bad Request\n");
+//			break;
+//		case 403:
+//			printf("Forbidden\n");
+//			break;
+//		case 404:
+//			printf("Not Found\n");
+//			break;
+//		case 500:
+//			printf("Internal Server Error\n");
+//			break;
+//		case 502:
+//			printf("Bad Gateway\n");
+//			break;
+//		}
+//	}
+//	return 0;
+//}
