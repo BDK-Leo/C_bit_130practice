@@ -178,3 +178,5 @@
 //	printf("%.2lf",(sum-max-min)/5.0);
 //	return 0;
 //}
+
+
