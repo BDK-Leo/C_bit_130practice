@@ -108,3 +108,73 @@
 //	}
 //	return 0;
 //}
+
+
+
+//题4：公务员面试
+// 打七个分数，去掉最低最高分然后平均
+//输入描述：一行，输入7个整数(0~100)
+//输出描述：一行，输出去掉最低最高分后的平均成绩，小数点后保留两位
+//方法一：
+//#include<stdio.h>
+//int main()
+//{
+//	int i, j = 0;
+//	double sum = 0.0;
+//	int arr[7] = {0};
+//	for (i = 0;i < 7;i++)
+//	{
+//		scanf("%d",&arr[i]);
+//	}
+//	for (i = 0;i < 7 - 1;i++)
+//	{
+//		for (j = 0;j < 7 - 1 - i;j++)
+//		{
+//			if (arr[j] > arr[j+1])
+//			{
+//				int tmp = arr[j + 1];
+//				arr[j + 1] = arr[j];
+//				arr[j] = tmp;
+//			}
+//		}
+//	}
+//	for (i = 0;i < 7;i++)
+//	{
+//		if (i == 0 || i == 6)
+//		{
+//			arr[i] = 0;
+//		}
+//		else
+//		{
+//			sum += arr[i];
+//		}
+//	}
+//	printf("%.2lf",sum/5);
+//	return 0;
+//}
+
+//方法二：
+//#include<stdio.h>
+//int main()
+//{
+//	int score = 0;
+//	int i = 0;
+//	int sum = 0;
+//	int max = 0;
+//	int min = 100;
+//	for (i = 0;i < 7;i++)
+//	{
+//		scanf("%d",&score);
+//		sum += score;
+//		if (score>max)
+//		{
+//			max = score;
+//		}
+//		if (score<min)
+//		{
+//			min = score;
+//		}
+//	}
+//	printf("%.2lf",(sum-max-min)/5.0);
+//	return 0;
+//}
