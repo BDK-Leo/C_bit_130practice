@@ -348,4 +348,98 @@
 
 
 
+//题8：验证登录(用户名：admin，密码：admin)
+//输入描述：多组输入，第一个为用户名，第二个为密码
+//输出描述：判断后输出"Login Success!"或"Login Fail!"
+//#include<stdio.h>
+//#include<string.h>
+//int main()
+//{
+//	char arr1[100] = {0};
+//	char arr2[100] = {0};
+//	while (~scanf("%s %s",&arr1,&arr2))
+//	{
+//		if ((strcmp(arr1, "admin") == 0) && (strcmp(arr2, "admin") == 0))
+//		{
+//			printf("Login Success!\n");
+//		}
+//		else
+//		{
+//			printf("Login Fail!\n");
+//		}
+//	}
+//	return 0;
+//}
 
+
+
+//题9：包含数字9的数，1~2019中有多少个包含数字9的数
+//输出描述：一行，一个整数
+//#include<stdio.h>
+//int main()
+//{
+//	int i = 0;
+//	int count = 0;
+//	for (i = 1;i <= 2019;i++)
+//	{
+//		int m = i;
+//		while (m)
+//		{
+//			if (m % 10 == 9)
+//			{
+//				count++;
+//				break;
+//			}
+//				m /= 10;
+//		}
+//	}
+//	printf("%d\n",count);
+//	return 0;
+//}
+
+
+
+//题10：奇偶统计
+// 任意输入一个正整数N,统计1~N之间奇数的个数和偶数的个数
+//输入描述：一行，一个正整数N(1<=N<=100000)
+//输出描述：一行，1~N之间奇数的个数和偶数的个数
+//方法一：
+//#include<stdio.h>
+//int main()
+//{
+//	int n = 0;
+//	int i = 0;
+//	int count_1 = 0;
+//	int count_2 = 0;
+//	scanf("%d",&n);
+//	for (i = 1;i <= n;i++)
+//	{
+//		if (i%2 == 1)
+//		{
+//			count_1++;
+//		}
+//		else if (i%2 == 0)
+//		{
+//			count_2++;
+//		}
+//	}
+//	printf("%d %d",count_1,count_2);
+//	return 0;
+//}
+
+//方法二：
+#include<stdio.h>
+int main()
+{
+	int n = 0;
+	scanf("%d", &n);
+	if (n % 2 == 1)
+	{
+		printf("%d %d",n/2+1,n/2);
+	}
+	else
+	{
+		printf("%d %d",n/2,n/2);
+	}
+	return 0;
+}
