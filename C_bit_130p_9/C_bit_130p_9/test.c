@@ -86,3 +86,32 @@
 //	}
 //	return 0;
 //}
+
+
+
+//题3：矩阵计算
+// 输入N * M的矩阵，矩阵元素均为整数，计算其中大于0的元素之和
+//输入描述：N:行数 M:列数，且N,M<=10
+//输出描述：一行，大于0的元素之和
+//#include<stdio.h>
+//int main()
+//{
+//	int n = 0;
+//	int m = 0;
+//	int num = 0;
+//	int sum = 0;
+//	scanf("%d %d",&n,&m);
+//	for (int i = 0;i < n;i++)
+//	{
+//		for (int j = 0;j < m;j++)
+//		{
+//			scanf("%d",&num);
+//			if (num>0)
+//			{
+//				sum += num;
+//			}
+//		}
+//	}
+//	printf("%d\n",sum);
+//	return 0;
+//}
