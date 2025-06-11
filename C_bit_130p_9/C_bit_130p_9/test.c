@@ -136,3 +136,31 @@
 //	}
 //	return 0;
 //}
+
+
+
+//题5：统计数据正负个数
+// 输入10个整数，分别统计正数负数的个数
+//输入描述：输入10个整数，空格分隔
+//输出描述：两行，第一行正数个数，第二行负数个数
+//#include<stdio.h>
+//int main()
+//{
+//	int arr[10] = {0};
+//	int positive = 0;
+//	int negative = 0;
+//	for (int i = 0;i < 10;i++)
+//	{
+//		scanf("%d",&arr[i]);
+//		if (arr[i] > 0)
+//		{
+//			positive++;
+//		}
+//		else if (arr[i] < 0)
+//		{
+//			negative++;
+//		}
+//	}
+//	printf("positive:%d\nnegative:%d", positive, negative);
+//	return 0;
+//}
