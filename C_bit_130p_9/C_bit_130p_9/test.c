@@ -61,3 +61,28 @@
 //	printf("%.2lf %.2lf %.2lf", max, min, sum / n);
 //	return 0;
 //}
+
+
+
+//题2：密码验证
+// 一致输出"same",不一致输出"different"
+//输入描述：空格分隔开的字符串，依次为密码和重复密码
+//输出描述：输出same或different
+//#include<stdio.h>
+//#include<string.h>
+//int main()
+//{
+//	char arr1[100] = {0};
+//	char arr2[100] = {0};
+//	scanf("%s %s",arr1,arr2);
+//	int r = strcmp(arr1,arr2);
+//	if (r == 0)
+//	{
+//		printf("same\n");
+//	}
+//	else
+//	{
+//		printf("different\n");
+//	}
+//	return 0;
+//}
