@@ -164,3 +164,33 @@
 //	printf("positive:%d\nnegative:%d", positive, negative);
 //	return 0;
 //}
+
+
+
+//题6：最高分和最低分之差
+// 输入n个成绩，换行输出n个成绩中最高分数和最低分数的差
+//输入描述：两行，第一行表示n个成绩，第二行为具体成绩(整数，0~100)
+//输出描述：一行，输出差
+//#include<stdio.h>
+//int main()
+//{
+//	int n = 0;
+//	int score = 0;
+//	int max = 0;
+//	int min = 100;
+//	scanf("%d",&n);
+//	for (int i = 0;i < n;i++)
+//	{
+//		scanf("%d",&score);
+//		if (score > max)
+//		{
+//			max = score;
+//		}
+//		if (score < min)
+//		{
+//			min = score;
+//		}
+//	}
+//	printf("%d\n",max-min);
+//	return 0;
+//}
