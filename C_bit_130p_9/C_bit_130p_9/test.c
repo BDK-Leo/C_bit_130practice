@@ -315,6 +315,41 @@
 
 
 
-//题9：
-//输入描述：
-//输出描述：
+//题9：序列中整数去重
+// 只保留重复数字第一次出现的地方，删除其余数字
+//输入描述：第一行正整数n(1<=n<=1000)，表示数字个数，第二行表示n个整数
+//输出描述：输出去重后的数组
+#include<stdio.h>
+int main()
+{
+	int n = 0;
+	scanf("%d",&n);
+	int arr[1000] = {0};
+	int i = 0;
+	for (i = 0;i < n;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	for (i = 0;i < n;i++)
+	{
+		int j = 0;
+		for (j = i+1;j < n;j++)
+		{
+			if (arr[i] == arr[j])
+			{
+				int k = 0;
+				for (k = j;k < n - 1;k++)
+				{
+					arr[k] = arr[k + 1];
+				}
+				n--;
+				j--;
+			}
+		}
+	}
+	for (i = 0;i < n;i++)
+	{
+		printf("%d ",arr[i]);
+	}
+	return 0;
+}
