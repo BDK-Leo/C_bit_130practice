@@ -143,3 +143,9 @@
 //题目四：
 //输入描述：
 //输出描述：
+#include<stdio.h>
+intamin()
+{
+
+	return 0;
+}
