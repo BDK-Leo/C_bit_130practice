@@ -249,28 +249,20 @@
 //			scanf("%d",&arr[i][j]);
 //		}
 //	}
-//	int flag = 0;
 //	for (i = 0; i < n; i++)
 //	{
 //		for (j = 0; j < n; j++)
 //		{
 //			if (i > j)
 //			{
-//				flag = 1;
-//			}
-//			else
-//			{
-//				flag = 0;
+//				if (arr[i][j] != 0)
+//				{
+//					printf("NO\n");
+//					return 0;
+//				}
 //			}
 //		}
 //	}
-//	if (flag == 1)
-//	{
-//		printf("YES\n");
-//	}
-//	else
-//	{
-//		printf("NO\n");
-//	}
+//	printf("YES\n");
 //	return 0;
 //}
