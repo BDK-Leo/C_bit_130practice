@@ -444,54 +444,54 @@
 // 任意行，列，对角线上出现连续三个相同的棋子
 //输入描述：三行三列的字符元素，代表棋盘状态，字符元素空格分开；其中元素K代表玩家K的棋子，为O表示没有棋子，为B代表玩家B的棋子
 //输出描述：K赢输出"KiKi wins!";B赢输出"BoBo wins!";否则输出"No winner!"
-//#include<stdio.h>
-//int main()
-//{
-//	char arr[3][3] = {0};
-//	int i = 0;
-//	int j = 0;
-//	for (i = 0;i < 3;i++)
-//	{
-//		for (j = 0;j < 3;j++)
-//		{
-//			scanf("%c",&arr[i][j]);
-//			getchar();
-//		}
-//	}
-//	char flag = 'O';
-//	for (i = 0;i < 3;i++)
-//	{
-//		if (arr[i][0] == arr[i][1] && arr[i][1] == arr[i][2] && arr[i][0] != 'O')
-//		{
-//			flag = arr[i][0];
-//			break;
-//		}
-//		if (arr[0][i] == arr[1][i] && arr[1][i] == arr[2][i] && arr[0][i] != 'O')
-//		{
-//			flag = arr[0][i];
-//			break;
-//		}
-//	}
-//	if (arr[0][0]==arr[1][1] && arr[1][1]==arr[2][2] && arr[0][0]!='O')
-//	{
-//		flag = arr[0][0];
-//	}
-//	if (arr[0][2] == arr[1][1] && arr[1][1] == arr[2][0] && arr[0][2] != 'O')
-//	{
-//		flag = arr[0][2];
-//	}
-//
-//	if (flag=='K')
-//	{
-//		printf("KiKi wins!\n");
-//	}
-//	else if (flag=='B')
-//	{
-//		printf("BoBo wins!\n");
-//	}
-//	else
-//	{
-//		printf("No winner!\n");
-//	}
-//	return 0;
-//}
+#include<stdio.h>
+int main()
+{
+	char arr[3][3] = {0};
+	int i = 0;
+	int j = 0;
+	for (i = 0;i < 3;i++)
+	{
+		for (j = 0;j < 3;j++)
+		{
+			scanf("%c",&arr[i][j]);
+			getchar();
+		}
+	}
+	char flag = 'O';
+	for (i = 0;i < 3;i++)
+	{
+		if (arr[i][0] == arr[i][1] && arr[i][1] == arr[i][2] && arr[i][0] != 'O')
+		{
+			flag = arr[i][0];
+			break;
+		}
+		if (arr[0][i] == arr[1][i] && arr[1][i] == arr[2][i] && arr[0][i] != 'O')
+		{
+			flag = arr[0][i];
+			break;
+		}
+	}
+	if (arr[0][0]==arr[1][1] && arr[1][1]==arr[2][2] && arr[0][0]!='O')
+	{
+		flag = arr[0][0];
+	}
+	if (arr[0][2] == arr[1][1] && arr[1][1] == arr[2][0] && arr[0][2] != 'O')
+	{
+		flag = arr[0][2];
+	}
+
+	if (flag=='K')
+	{
+		printf("KiKi wins!\n");
+	}
+	else if (flag=='B')
+	{
+		printf("BoBo wins!\n");
+	}
+	else
+	{
+		printf("No winner!\n");
+	}
+	return 0;
+}
