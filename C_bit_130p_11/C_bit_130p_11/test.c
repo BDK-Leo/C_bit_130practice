@@ -25,3 +25,24 @@
 //	}
 //	return 0;
 //}
+
+
+
+//题目二：小乐乐求和(求和符号)
+//输入描述：输入一个正整数n(1<=n<=10^9)
+//输出描述：输出一个值为求和结果
+//#include<stdio.h>
+//
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d",&n);
+//	int i = 0;
+//	long long sum = 0;
+//	for (i = 0;i < n;i++)
+//	{
+//		sum += i + 1;
+//	}
+//	printf("%lld",sum);
+//	return 0;
+//}
