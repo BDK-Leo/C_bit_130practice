@@ -31,8 +31,8 @@
 //题目二：小乐乐求和(求和符号)
 //输入描述：输入一个正整数n(1<=n<=10^9)
 //输出描述：输出一个值为求和结果
+// 方法一：
 //#include<stdio.h>
-//
 //int main()
 //{
 //	int n = 0;
@@ -46,3 +46,22 @@
 //	printf("%lld",sum);
 //	return 0;
 //}
+
+//方法二：
+//#include<stdio.h>
+//int main()
+//{
+//	long long n = 0;
+//	scanf("%lld",&n);
+//	int i = 0;
+//	long long sum = 0;
+//	sum = (1 + n) * n / 2;
+//	printf("%lld",sum);
+//	return 0;
+//}
+
+
+
+//题目三：
+//输入描述：
+//输出描述：
