@@ -95,7 +95,39 @@
 
 
 
-//题目五：
-//输入描述：
-//输出描述：
+//题目五：小乐乐与欧几里得
+// 求两个整数的最大公约数和最小公倍数之和
+//输入描述：n,m(1<=n<=109,1<=m<=109)
+//输出描述：输出一个正整数，为n和m的最大公约数和最小公倍数之和
+//方法一：暴力求解
+//#include<stdio.h>
+//int main()
+//{
+//	long long n = 0;
+//	long long m = 0;
+//	scanf("%lld %lld",&n,&m);
+//	long long max = n > m ? m : n;//最大公约数
+//	while (1)
+//	{
+//		if (n % max == 0 && m % max == 0)
+//		{
+//			break;
+//		}
+//		max--;
+//	}
+//	long long min = n > m ? n : m;//最小公倍数
+//	while (1)
+//	{
+//		if (min%n==0 && min%m==0)
+//		{
+//			break;
+//		}
+//		min++;
+//	}
+//	printf("%lld\n",max+min);
+//	return 0;
+//}
+
+//方法二：
+
 
