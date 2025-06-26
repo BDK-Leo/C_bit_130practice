@@ -128,6 +128,26 @@
 //	return 0;
 //}
 
-//方法二：
-
+//方法二：辗转相除法
+//#include<stdio.h>
+//int main()
+//{
+//	long long n = 0;
+//	long long m = 0;
+//	scanf("%lld %lld",&n,&m);
+//	long long n1 = n;
+//	long long m1 = m;
+//	long long max = 0;
+//	long long min = 0;
+//	long long tmp = 0;
+//	while (tmp=n%m)
+//	{
+//		n = m;
+//		m = tmp;
+//	}
+//	max = m;
+//	min = n1 * m1 / max;
+//	printf("%lld\n",max+min);
+//	return 0;
+//}
 
