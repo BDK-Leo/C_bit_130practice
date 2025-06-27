@@ -246,6 +246,59 @@
 //    return 0;
 //}
 
+//方法四：更相减损术和移位结合2
+//#include <stdio.h>
+//// 使用更相减损术和移位结合计算最大公约数
+//long long gcd(long long a, long long b)
+//{
+//    if (a == 0)
+//        return b;
+//    if (b == 0)
+//        return a;
+//
+//    // 找到 a 和 b 的共同因子 2 的次数
+//    int shift = 0;
+//    while (((a | b) & 1) == 0)
+//    { // 同时为偶数
+//        a >>= 1;
+//        b >>= 1;
+//        shift++;
+//    }
+//
+//    while ((a & 1) == 0)
+//    { // a 为偶数
+//        a >>= 1;
+//    }
+//
+//    // 使用更相减损术
+//    while (b != 0)
+//    {
+//        while ((b & 1) == 0)
+//        { // b 为偶数
+//            b >>= 1;
+//        }
+//        if (a > b)
+//        {
+//            long long temp = a;
+//            a = b;
+//            b = temp;
+//        }
+//        b = b - a; // 相减
+//    }
+//
+//    // 恢复共同因子 2 的次数
+//    return a << shift;
+//}
+//
+//int main() {
+//    long long num1, num2;
+//    scanf("%lld %lld", &num1, &num2);
+//    long long result = gcd(num1, num2);
+//    printf("%lld\n", result + num1 * num2 / result);
+//
+//    return 0;
+//}
+
 
 //题目六：
 //
