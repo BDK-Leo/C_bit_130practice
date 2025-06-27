@@ -151,6 +151,100 @@
 //	return 0;
 //}
 
+//方法三：更相减损术1
+//#include<stdio.h>
+//long long gcd(long long a,long long b)
+//{
+//	if (a == b)
+//	{
+//		return a;
+//	}
+//	else if (a < b)
+//	{
+//		return gcd(b - a,a);
+//	}
+//	else
+//	{
+//		return gcd(a - b,b);
+//	}
+//}
+//
+//int main()
+//{
+//	long long n = 0;
+//	long long m = 0;
+//	scanf("%lld %lld",&n,&m);
+//	long long max = 0;
+//	long long min = 0;
+//	max = gcd(n,m);
+//	min = n * m / max;
+//	printf("%lld\n",max+min);
+//	return 0;
+//}
+
+//方法三：更相减损术2
+//#include<stdio.h>
+//int main()
+//{
+//	long long n = 0;
+//	long long m = 0;
+//	scanf("%lld %lld",&n,&m);
+//	long long a = n;
+//	long long b = m;
+//	while (a != b)
+//	{
+//		if (a > b)
+//		{
+//			a -= b;
+//		}
+//		else
+//		{
+//			b -= a;
+//		}
+//	}
+//	printf("%lld",a+n*m/a);
+//	return 0;
+//}
+
+//方法四：更相减损术和移位结合
+//#include<stdio.h>
+//long long gcd(long long a, long long b) 
+//{
+//    if (a < b) 
+//    {
+//        a = a ^ b;
+//        b = a ^ b;
+//        a = a ^ b;
+//    }
+//    if (a == b) 
+//    {
+//        return a;
+//    }
+//    if (!(a & 1) && !(b & 1)) 
+//    {
+//        return gcd(a >> 1, b >> 1) << 1;
+//    }
+//    else if (!(a & 1) && (b & 1)) 
+//    {
+//        return gcd(a >> 1, b);
+//    }
+//    if ((a & 1) && !(b & 1)) 
+//    {
+//        return gcd(a, b >> 1);
+//    }
+//    else 
+//    {
+//        return  gcd(a - b, b);
+//    }
+//}
+//
+//int main()
+//{
+//    long long n, m;
+//    scanf("%lld %lld", &n, &m);
+//    printf("%lld\n",n * m / gcd(n, m)+ gcd(n, m));
+//    return 0;
+//}
 
 
 //题目六：
