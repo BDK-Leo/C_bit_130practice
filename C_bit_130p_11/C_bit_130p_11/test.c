@@ -414,3 +414,41 @@
 //	}
 //	return 0;
 //}
+
+
+
+//题目八：小乐乐与字符串
+//输入描述：输入只包含大写字母的字符串(1<=length<=8000)
+//输出描述：输出一个整数，为字符串s中字串"CHN"的数量
+//#include<stdio.h>
+//int main()
+//{
+//	char arr[8000] = {0};
+//	scanf("%s",arr);
+//	long long C = 0;
+//	long long CH = 0;
+//	long long CHN = 0;
+//	char* p = arr;
+//	while (*p)
+//	{
+//		if (*p == 'C')
+//		{
+//			C++;
+//		}
+//		else if (*p == 'H')
+//		{
+//			CH += C;
+//		}
+//		else if (*p == 'N')
+//		{
+//			CHN += CH;
+//		}
+//		p++;
+//	}
+//	printf("%lld\n",CHN);
+//	return 0;
+//}
+
+
+
+//题目九：
