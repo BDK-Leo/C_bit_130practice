@@ -471,3 +471,75 @@
 //	printf("%d\n",max);
 //	return 0;
 //}
+
+
+
+//题目十：小乐乐转换成绩
+//输入描述：一行，一个整数表示的成绩
+//输出描述：一行，转换后的等级
+// 方法一：
+//#include<stdio.h>
+//int main()
+//{
+//	int score = 0;
+//	scanf("%d", &score);
+//	if (score >= 90 && score <= 100)
+//	{
+//		printf("A\n");
+//	}
+//	else if (score >= 80 && score <= 89)
+//	{
+//		printf("B\n");
+//	}
+//	else if (score >= 70 && score <= 79)
+//	{
+//		printf("C\n");
+//	}
+//	else if (score >= 60 && score <= 69)
+//	{
+//		printf("D\n");
+//	}
+//	else if (score <= 59 && score >= 0)
+//	{
+//		printf("E\n");
+//	}
+//	else 
+//	{
+//		printf("F\n");
+//	}
+//	return 0;
+//}
+
+//方法二：
+//#include <stdio.h>
+//int main()
+//{
+//    int score = 0;
+//    scanf("%d", &score);
+//    if (score >= 0 && score <= 100)
+//    {
+//        score /= 10;
+//        switch (score)
+//        {
+//        case 10:printf("A\n"); break;
+//        case 9: printf("A\n"); break;
+//        case 8: printf("B\n"); break;
+//        case 7: printf("C\n"); break;
+//        case 6: printf("D\n"); break;
+//        case 5:
+//        case 4:
+//        case 3:
+//        case 2:
+//        case 1:
+//        case 0:
+//            printf("E\n"); break;
+//        default:
+//            break;
+//        }
+//    }
+//    else
+//    {
+//        printf("F\n");
+//    }
+//    return 0;
+//}
