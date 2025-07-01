@@ -31,3 +31,17 @@
 //	printf("%d\n",num);
 //	return 0;
 //}
+
+
+
+//题目二：KiKi学程序设计基础
+//输入描述：无
+//输出描述：printf("Hello world!\n");
+//        count << "Hello world!" << endl;
+//#include<stdio.h>
+//int main()
+//{
+//	printf("printf(\"Hello world!\\n\");\n");
+//	printf("count << \"Hello world!\" << endl;\n");
+//	return 0;
+//}
