@@ -543,3 +543,28 @@
 //    }
 //    return 0;
 //}
+
+
+
+//题目十一：小乐乐计算函数
+//输入描述：一行，输入三个整数,分别表示a,b,c
+//输出描述：一行，一个浮点数，小数点保留两位，为计算后的m值
+#include<stdio.h>
+
+int max3(int a,int b,int c)
+{
+	int max = a > b ? a : b;
+	return (max > c ? max : c);
+}
+
+int main()
+{
+	int a = 0;
+	int b = 0;
+	int c = 0;
+	scanf("%d %d %d",&a,&b,&c);
+	float m = 0.0;
+	m = ((float)max3(a+b,b,c)) / ((max3(a,b+c,c)) + (max3(a,b,b+c)));
+	printf("%.2f\n",m);
+	return 0;
+}
