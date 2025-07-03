@@ -48,9 +48,44 @@
 
 
 
-//题目三：
-//输入描述：
-//输出描述：
+//题目三：KiKi求质数的个数
+//输入描述：无
+//输出描述：一行，一个整数，表示所有三位整数中有多少质数
+//方法一：
+//#include<stdio.h>
+//int Prime(int i)
+//{
+//	int j = 0;
+//	for (j = 2;j <= i - 1;j++)
+//	{
+//		if (i%j == 0)
+//		{
+//			return 0;
+//		}
+//	}
+//	return 1;
+//}
+//
+//int main()
+//{
+//	int i = 0;
+//	int count = 0;
+//	for (i = 100;i < 1000;i++)
+//	{
+//		if (Prime(i) == 1)
+//		{
+//			count++;
+//		}
+//	}
+//	printf("%d\n",count);
+//	return 0;
+//}
 
+//方法二：
+#include<stdio.h>
+int main()
+{
 
+	return 0;
+}
 
