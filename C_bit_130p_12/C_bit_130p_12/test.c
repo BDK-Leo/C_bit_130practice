@@ -109,3 +109,77 @@
 //	return 0;
 //}
 
+
+
+//题目四：KiKi去重整数并排列
+// 给定一个整数序列，把其中的重复的整数去掉并从小到大排序
+//输入描述：第一行输入一个整数n,表示有n个整数,第二行输入n个整数(大于等于1，小于等于1000)
+//输出描述：去重并从小到大排序输出
+//方法一：暴力求解
+//#include<stdio.h>
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d",&n);
+//	int arr[1000] = {0};
+//	int i = 0;
+//	for (i = 0;i < n;i++)
+//	{
+//		scanf("%d",&arr[i]);
+//	}
+//	for (i = 0;i < n - 1;i++)
+//	{
+//		int j = 0;
+//		for (j = 0;j < n - 1 - i;j++)
+//		{
+//			if (arr[j] > arr[j+1])
+//			{
+//				int tmp = arr[j];
+//				arr[j] = arr[j + 1];
+//				arr[j + 1] = tmp;
+//			}
+//		}
+//	}
+//	for (i = 0;i < n - 1;i++)
+//	{
+//		if (arr[i] == arr[i+1])
+//		{
+//			int k = 0;
+//			for (k = i;k < n - 1;k++)
+//			{
+//				arr[k] = arr[k + 1];
+//			}
+//			n--;
+//			i--;
+//		}
+//	}
+//	for (i = 0;i < n;i++)
+//	{
+//		printf("%d ", arr[i]);
+//	}
+//	return 0;
+//}
+
+//方法二：
+//#include<stdio.h>
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d",&n);
+//	int arr[1001] = {0};
+//	int i = 0;
+//	int m = 0;
+//	for (i = 0;i < n;i++)
+//	{
+//		scanf("%d",&m);
+//		arr[m] = m;
+//	}
+//	for (i = 0;i <= 1000;i++)
+//	{
+//		if (arr[i] != 0)
+//		{
+//			printf("%d ",arr[i]);
+//		}
+//	}
+//	return 0;
+//}
