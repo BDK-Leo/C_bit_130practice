@@ -189,10 +189,90 @@
 //题目五：KiKi学结构体和指针
 //输入描述：第一行输入数据个数n(3<=n<=100),第二行依次输入n个整数,第三行输入欲删除数据m
 //输出描述：第一行输出完成删除后的单链表长度，第二行依次输出完成删除后的单链表数据
-#include<stdio.h>
-
-int main()
-{
-
-	return 0;
-}
+//#include<stdio.h>
+//#include<stdlib.h>
+////链表节点的定义
+//struct Node
+//{
+//	int data;//数据域
+//	struct Node* next;//指针域
+//};
+//
+//int main()
+//{
+//	struct Node* list = NULL;//指向链表的指针
+//	struct Node* tail = NULL;//指向链表尾部元素的指针
+//	int n = 0;
+//	scanf("%d",&n);
+//	int i = 0;
+//	int m = 0;
+//	int d = 0;
+//	for (i = 0;i < n;i++)
+//	{
+//		//接收n个数字并尾插到链表中
+//		scanf("%d",&m);
+//		struct Node* pn = (struct Node*)malloc(sizeof(struct Node));
+//		pn->data = m;
+//		pn->next = NULL;
+//		//插入第一个元素
+//		if (list == NULL)
+//		{
+//			list = pn;
+//			tail = pn;
+//		}
+//		else
+//		{
+//			tail->next = pn;
+//			tail = pn;
+//		}
+//	}
+//	//接收要删除的元素
+//	scanf("%d",&d);
+//	//删除链表中指定的元素
+//	struct Node* cur = list;
+//	struct Node* prev = NULL;
+//	while (cur)
+//	{
+//		if (cur->data == d)
+//		{
+//			//删除的如果是第一个节点
+//			struct Node* pd = cur;
+//			if (cur == list)
+//			{
+//				list = list->next;
+//				cur = list;
+//			}
+//			//删除的不是第一个节点
+//			else
+//			{
+//				prev->next = cur->next;
+//				cur = prev->next;
+//			}
+//			free(pd);
+//			n--;
+//		}
+//		else
+//		{
+//			prev = cur;
+//			cur = cur->next;
+//		}
+//	}
+//	printf("%d\n",n);
+//	cur = list;
+//	while (cur)
+//	{
+//		printf("%d ",cur->data);
+//		cur = cur->next;
+//	}
+//	//释放
+//	cur = list;
+//	struct Node* del = NULL;
+//	while (cur)
+//	{
+//		del = cur;
+//		cur = cur->next;
+//		free(del);
+//	}
+//	list = NULL;
+//	return 0;
+//}
