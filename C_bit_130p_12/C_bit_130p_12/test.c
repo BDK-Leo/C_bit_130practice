@@ -282,9 +282,35 @@
 //题目六：KiKi定义电子日历类
 //输入描述：一行，三个整数，分别表示年、月、日
 //输出描述：一行，用"日/月/年"格式输出日期
-#include<stdio.h>
-int main()
-{
-
-	return 0;
-}
+//C++
+//#include<iostream>
+//using namespace std;
+//
+//class TDate
+//{
+//private:
+//	int Year;
+//	int Month;
+//	int Day;
+//public:
+//	TDate(int y=0,int m=0,int d=0)
+//	{
+//		Year = y;
+//		Month = m;
+//		Day = d;
+//	}
+//	void print()
+//	{
+//		count << Day << '/' << Month << '/' << Year << endl;
+//	}
+//};
+//int main()
+//{
+//	int year = 0;
+//	int month = 0;
+//	int day = 0;
+//	cin >> year >> month >> day;
+//	TDate d(year,month,day);
+//	d.print();
+//	return 0;
+//}
